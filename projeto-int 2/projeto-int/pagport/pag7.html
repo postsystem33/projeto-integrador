@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../image/icone.ico">
+    <title>pagina 1</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Indie+Flower&family=Signika&family=Work+Sans:ital,wght@0,100;0,200;1,100&display=swap');
+        @font-face {
+            font-family: visby;
+            src: url(../Demo_Fonts/Fontspring-DEMO-visbycf-medium.otf);
+        }
+        
+        .dropdown:hover>.dropdown-content {
+            display: block;
+        }
+        header{
+            background-color: #9e3522;
+        }
+        .submenu {
+            background-color: #E06A56;
+            transition: background-color 0.2s ease-in;
+        }
+        .item {
+            background-color: #E06A56;
+            transition: background-color 0.2s ease-in;
+        }
+        .item:hover {
+            background-color: #704937;
+            font-weight: bold;
+            transition: background-color 0.2s ease-in;
+        }
+        .submenu:hover {
+            background-color: #704937;
+            font-weight: bold;
+            transition: background-color 0.2s ease-in;
+        }
+        h2{
+            font-family: 'Berkshire Swash';
+            color: rgb(249 115 22);
+        }
+        footer {
+            background-color: #704937;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header class=" text-white py-2 w-full h-auto z-30">
+            <nav class=" mx-auto flex justify-between items-center">
+                <div class="text-4xl font-semibold">
+                    <a href="#"><img src="../image/logo.png" width="140px" height="140px"></a>
+                </div>
+                <!---MENU-->
+                <button class="font-medium py-2 px-4 rounded inline-flex items-center text-white ml-auto">
+                    <span class=" text-xl py-2 px-4 tracking-wide "><a href="index.html">INICIO</a></span>
+                </button>
+                <div class="dropdown inline-block relative group">
+                    <button class="font-medium py-2 px-3 rounded inline-flex items-center text-white mr-40 group-hover:text-white">
+                        <span class="menu text-xl py-2 px-4 tracking-wide hover:border-b-2 hover:border-outset hover:border-white">    MENU</span>
+                    </button>
+                    <ul class="dropdown-content absolute hidden pt-1">
+                        <li class="dropdown group relative">
+                            <a class="submenu py-4 px-5 block whitespace-no-wrap hover:font-semibold text-white" href="#">Tópico 1</a>
+                            <ul class="dropdown-content absolute hidden pl-5 ml-24 -mt-12">
+                                <li><a class="item py-3 px-9 block whitespace-no-wrap text-white z-30 ml-16" href="pag1.html">Página 1</a></li>
+                                <li><a class="item py-3 px-9 block whitespace-no-wrap text-white z-30 ml-16" href="pag2.html">Página 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown group relative">
+                            <a class="submenu py-4 px-5 block whitespace-no-wrap text-white" href="#">Tópico 2</a>
+                            <ul class="dropdown-content absolute hidden pl-5 ml-24 -mt-12">
+                                <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag3.html">Página 3</a></li>
+                                <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag4.html">Página 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown group relative">
+                            <a class="submenu  py-4 px-3 block whitespace-no-wrap text-white" href="#">Tópico 3</a>
+                            <ul class="dropdown-content absolute hidden pl-5 ml-24 -mt-12">
+                                <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag3.html">Página 5</a></li>
+                                <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="#">Página 6</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="submenu  py-4 px-6 block whitespace-no-wrap text-white" href="../paging/index.html">Mudar para inglês</a></li>
+                    </ul>
+                </div>
+                <!--fim do menu-->
+                <button class="md:hidden menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </nav>
+        </header>
+    </div>
+    
+    
+        <img class="ml-64 mt-24" src="../image/back3-800.jpeg" alt="">
+
+        <div class="mt-52">
+            <h2 class="text-4xl font-semibold ml-20">INTRODUÇÃO</h2>
+            <p class=" md:subpixel-antialiased font-medium tracking-widest float-left indent-6 mt-4 whitespace-pre-wrap justify-content text-justify px-20">
+    Na Introdução descreve-se a cultura como uma expressão multirreferencial e multidimensional da realidade. A multirreferencialidade sendo a diversidade constituída pela visão de mundo e expressões artística-político- social-espiritual de cada cultura. A multidimensionalidade refere-se a percepção de diferentes níveis de realidade através dos quais ela se manifesta.
+    Neste sentido, cada cultura se revela através de um nível pratico-gestual, suas ações e ritos; de um nível lógico-epistêmico, suas formas de pensar e de conhecer; de um nível mítico-simbólico, suas maneiras de sentir, de expressar e de articular a intuição sensível e racional, e de um nível de mistério, aquele constituído pelo insondável, inominável, indizivel e que, por vezes, se espelha por abstrações e mataforas
+
+    Portanto, podemos dizer que as culturas não são disciplinas, seu universo é de uma natureza transdisciplinar. Somos cidadãos de uma cultura, até mesmo, de mais do que de uma única cultura e, talvez, de um espaço onde diferentes culturas podem dialogar
+
+    Cultura é identidade, raízes, dinâmica própria. Contudo, nenhuma cultura pode pretender monopolizar a realidade. Mantendo sua individualidade, cada cultura deve encontrar uma forma de se conectar com outras culturas no lugar onde o dialogo transcultural é fértil, integrador e libertador.
+                
+            </p>
+    <div class="mx-auto my-16 mt-12 ml-64"><img  class=" " src="../image/aldeia800.jpg" alt="Imagem de fundo"></div>
+    
+    <h2 class="text-4xl font-semibold ml-20">PROLOGO</h2>
+    <p class=" md:subpixel-antialiased font-medium tracking-widest float-left indent-6 mt-4 whitespace-pre-wrap justify-center text-justify px-20">
+        Kaka Werá Jacupé  é um Txukarramãe que percorre o caminho do Sol, de acordo com a pintura do urucurn escrita nesse corpo que guarda a história milenar do nosso povo, desde os Tubaguaçus  primeiros, desde os Coroados primeiros, os primeiros Tupinambás -- os adornados da plumagem do arco-íris em cintilantes cocares, os que desde sempre desenham e talham as douradas flechas dos raios de Tupã -- pelos tempos, luas e luas.
+        Kaká foi nomeado pelos guaranis da aldeia Krukutu e da aldeia Morro da Saudade, em São Paulo, consagrado por um velho pajé ao redor de uma fogueira, ao redor de cantos sagrados no Opy, a casa de rezas.
+
+        Os Espiritos Instrutores (os Tamãi) empurraram Kaká na boca do jaguar, aquela yauaretê chamada metrópole, ele crê que como prova, para que aprendesse e comesse daquela língua e cultura de pedra e aço. Foi assim que ele comeu o pão que a civilização amassou. Ele sobreviveu. Por isso, ele devorou o cérebro daquela cidade. 
+        Kaká sonhou que os Tamâi deram a ele a missão de contar um pouco da historia dele, da sua vida entre os dois mundos, e revelar mistérios da tradição milenar ensinada pelos Antigos
+        
+        Ele era a voz da terra pisada, assim como da terra tocada. Pois aceitou por inteiro a missão de ser um porta-voz à surda metrópole com seus ornamentos de néon e beleza cosmética de sua face, cujos antepassados vestiram o povo dele com costumes, hábitos, espelhos. E que, embora os hábitos procurassem ter feito monges , criaram violências. 
+    </p>
+    <h2 class="text-4xl font-semibold ml-20">Kaká Werá e o contato com a civilização</h2>
+
+<p class=" md:subpixel-antialiased font-medium tracking-widest float-left indent-6 mt-4 whitespace-pre-wrap justify-center text-justify px-20">
+    Ao chegarem e habitarem entre os guaranis, a cidade acabou pedindo nome do pai e dos guaranis em troca de sobrevivência. Disseram a eles que sem nome e número civilizado não se existia. Para eles não havia muito sentido o que lhes foi dito, o que eram então? Eles só não existiam. Passaram a existir só quando foi necessário trocar com os civilizados meios para sobreviver. Um dia uma senhora convidou o pai de Kaká Werá a colocar Kaká Werá na escola, que se instalara morro abaixo. O pai de Kaká Werá não quis e disse que era uma forma de se defenderem. Kaká perguntou o que era a escola.
+
+     Ele o respondeu que era um local onde se riscava com traços o que se falava e que qualquer podia dizer exatamente o que se foi falado olhando aqueles traços, mesmo que se passassem sois e luas, Kaká ao ouvir ficou fortemente encantado. Após os pedidos da senhora Kaká foi a escola, no começo não se importavam se ele fosse descalço e sem camisa, mas com o tempo lhe foi exigido uniforme: calção azul-marinho, meias brancas, sapatos pretos, camisa branca e uma gravatinha com um risco branco que indicava ser o primeiro ano. Para Kaká era impossível andar com o uniforme, pois apertava o corpo dele. Participava do ritual, cantava o hino da bandeira verde e amarela. Quando a mãe dele tinha se dado conta, haviam “roubado a alma” dele. Ficara presa em um pedalo de papel, dividida, preta e branca e sem sol em um documento chamado caderneta escolar. Kaká explicou que precisou ir em frente a uma maquina que estourava luz no rosto
+
+    –  Anguery, mi tã je jucá anguery – comentou o cacique Capitão Branco. – Espíritos ladrões, roubaram a alma do menino, para matá-la – era o que dizia.
+    A mãe de Kaká tremeu de susto. Brigou com o pai. Kaká lhes disse que, além disso, a professora Maria o levou para tirar escritos que marcassem o dia em que ele nascera.
+
+    –  Foi na lua nova – ele disse, e ela colocou; ela falou que iriam precisar fazer uma grande viagem. O pai de Kaká descobriu que ao invés do apelido Kaka-txai-jé Txukarramãe ela colocara o nome do filho que morrera. A mãe o tirou da escola e bateu no pai com borduna de caçar cateto e fez ele ir até lá e pedir o espírito de Kaká de volta. A professora chorou muito, mas aqueles documentos ficaram marcados com a alma do seu filho recém-nascido e morto.
+    
+    E, quando Kaká Werá já estava gostando da escola, não podia mais ir. Ele só iria voltar alguns anos depois, recomeçando os riscos. Traço por traço, naquela gravatinha azul de antigamente. Mas a mãe não resistiu aos novos costumes, ou às velhas saudades, não sabe, talvez não tenha resistido à paisagem da vida desmoronando diante dos olhos. Talvez ela mesma não tivesse a necessidade de resistira qualquer coisa. O fato é que ela escolhera morrer cautelosamente, procurando não deixar qualquer marca na lembrança. Foi um dia perdido na infância, em que suas ervas não conseguiam curar as lagrimas de Kaká. Mesmo assim, elas tiveram o cuidado de manter a oca perfumada. Enquanto o sol fazia o destino seguir adiante. 
+    
+    
+</p>
+</div>
+</div>
+
+<div class="mt-32 justify-between">
+    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+    <a href="pag6.html"> <- Anterior </a>
+    </button>
+    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r float-right">
+      <a href="pag8.html">  Próximo ->   </a>
+    </button>
+</div>
+
+
+
+
+
+
+
+    <!----Footer-->
+    <footer class="text-white py-6">
+        <div class=" mx-auto text-center">
+            <p>&copy; 2023 Cultura indígena</p>
+            <div class="dropdown inline-block relative group">
+                <button class="font-medium py-2 px-4 rounded inline-flex items-center text-white hover:bg-gray-700 ">
+                    <span class="text-xl px-4 tracking-wide"><a href="pag-dev.html">Quem Somos</a></span>
+                </button>
+                <div class="dropdown inline-block relative group">
+                    <button class="font-medium py-2 px-4 rounded inline-flex items-center text-white hover:bg-gray-700">
+                        <span class="text-xl px-4 tracking-wide"><a href="contate_nos.html">Contate-nós</a></span>
+                    </button>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

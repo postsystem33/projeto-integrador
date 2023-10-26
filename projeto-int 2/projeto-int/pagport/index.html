@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../image/icone.ico">
+    <title>Index</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Indie+Flower&family=Signika&family=Work+Sans:ital,wght@0,100;0,200;1,100&display=swap');
+        @font-face {
+            font-family: visby;
+            src: url(../Demo_Fonts/Fontspring-DEMO-visbycf-medium.otf);
+        }
+        
+
+        .dropdown:hover>.dropdown-content {
+            display: block;
+        }
+
+        .submenu {
+            background-color: #E06A56;
+            transition: background-color 0.2s ease-in;
+        }
+        .item {
+            background-color: #E06A56;
+            transition: background-color 0.2s ease-in;
+        }
+        .item:hover {
+            background-color: #704937;
+            font-weight: bold;
+            transition: background-color 0.2s ease-in;
+        }
+        .submenu:hover {
+            background-color: #704937;
+            font-weight: bold;
+            transition: background-color 0.2s ease-in;
+        }
+        h2{
+            font-family: 'Berkshire Swash';
+            color: rgb(249 115 22);
+        }
+        footer {
+            background-color: #704937;
+        }
+
+        /* animação */
+        .dropdown-content {
+            opacity: 0;
+            transition: opacity 0.2s ease-in;
+            pointer-events: none;
+        }
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-white overflow-x-hidden">
+    <header class="py-4 bg-opacity-50 absolute w-full z-20">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-4xl font-semibold">
+                <a href="#"><img src="../image/logo.png" width="140px" height="140px"></a>
+            </div>
+            <!---MENU-->
+            <!---MENU-->
+            <div class="dropdown inline-block relative group">
+                <button class="font-medium py-2 px-3 rounded inline-flex items-center text-white mr-40 group-hover:text-white">
+                    <span class="menu text-xl py-2 px-4 tracking-wide hover:border-b-2 hover:border-outset hover:border-white">    MENU</span>
+                </button>
+                <ul class="dropdown-content absolute hidden pt-1">
+                    <li class="dropdown group relative">
+                        <a class="submenu py-4 px-5 block whitespace-no-wrap hover:font-semibold text-white" href="#">Tópico 1</a>
+                        <ul class="dropdown-content absolute hidden pl-5 ml-24 -mt-12">
+                            <li><a class="item py-3 px-9 block whitespace-no-wrap text-white z-30 ml-16" href="pag1.html">Página 1</a></li>
+                            <li><a class="item py-3 px-9 block whitespace-no-wrap text-white z-30 ml-16" href="pag2.html">Página 2</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag3.html">Página 3</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag4.html">Página 4</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag5.html">Página 5</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag6.html">Página 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown group relative">
+                        <a class="submenu py-4 px-5 block whitespace-no-wrap hover:font-semibold text-white" href="#">Tópico 2</a>
+                        <ul class="dropdown-content absolute hidden pl-5 ml-24 -mt-12">
+                            <li><a class="item py-3 px-9 block whitespace-no-wrap text-white z-30 ml-16" href="pag7.html">Página 1</a></li>
+                            <li><a class="item py-3 px-9 block whitespace-no-wrap text-white z-30 ml-16" href="pag8.html">Página 2</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag9.html">Página 3</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag10.html">Página 4</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag11.html">Página 5</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-16" href="pag12.html">Página 6</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="submenu  py-4 px-6 block whitespace-no-wrap text-white" href="../paging/index.html">Mudar para inglês</a></li>
+                </ul>
+            </div>
+            <!--fim do menu-->
+            <button class="md:hidden menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <!--IMAGEM-->
+    <div class="bg-center h-screen overflow-hidden bg-cover bg-no-repeat bg-fixed" style="background-image: url('../image/back4-1600.png');">
+        <div class="bg-overlay relative top-0 left-0 w-full h-full z-10 bg-red-600 bg-opacity-40"></div>
+    </div>
+    <!----Conteudo-->
+    <div class="p-4 mt-16 ml-24">
+        <h2 class="main text-4xl tracking-widest mb-4 mt-12">INTUITO DO SITE</h2>
+        <div class="flow-root">
+        <p class="text-left antialiased md:subpixel-antialiased font-medium tracking-wide float-left w-1/3 indent-6 ">Este site foi feito com base no livro "Todos os dias que dissemos adeus " Óre awé roiru'a " feito por Kaka Werá 
+            um guerreiro Txukarramãe,que narra sua busca pelas raízes ancestrais, percorrendo aldeias e passando por iniciações espirituais entre os povos Tapuia e Guarani, sendo este site sobre essa busca de Kaka Werá, com um enfoque na visão cultural deste ao percorrer aldeias e a 
+            influencia que isso teve nele visivel através do livro
+        </p>
+        <div class=" bg-no-repeat float-right flex space-x-3 -mr-34 justify-center -mt-16 ">
+          <img class="relative -mt-2 max-h-screen" src="../image/woods-indg-norm.jpg " alt="madeiras">
+          <img class="relative  mb-12 " src="../image/Xamã-guarani.webp" alt="">
+        </div>
+        </div>
+    </div>
+
+    <div class="p-4 mt-12">
+            <h2 class="main text-4xl tracking-widest mb-4 mt-20 flex justify-center">COMO SERÁ O SITE</h2>
+        <p class="text-left antialiased md:subpixel-antialiased font-medium tracking-normal text-center mx-36">Este site será dividido em tópicos e dentro desses topicos haverá a nossa visão do livro de uma perspectiva diferente, visando 'entender' como essa busca pela ancestralidade de Kaka Werá o influenciou e mudou o seu pensamento e ideias iniciais, assim como relacionar a situação indigena na epoca em que foi escrito o livro e a situação atual </p>
+    </div>
+    <div class="p-4 mt-12">
+        <h2 class="main text-4xl tracking-widest mb-4 mt-20 flex justify-center">UM POUCO SOBRE KAKA WERÁ</h2>
+        <p class="text-left antialiased md:subpixel-antialiased font-medium tracking-normal text-center mx-36">
+            Kaká Werá é escritor, educador, terapeuta, empreendedor social e conferencista. Precursor da literatura indígena no Brasil, autor de 12 livros, entre os quais os premiados: A Terra dos Mil Povos e Menino-Trovão. Fundou a 30 anos atrás o Instituto Arapoty que desenvolveu projetos no Brasil e na França com o foco na valorização dos saberes tradicionais dos povos originários. Realizou conferências em 14 países, entre eles: Estados Unidos, França, Inglaterra, África e Índia.  Atualmente foca suas atividades em seminários e vivências para  desenvolvimento de pessoas  e de comunidades, é colunista da revista Vida Simples e roteirista. </p>
+            <img class="mt-12 mx-auto my-16" src="../image/kaka-small.webp" alt="kaka Werá">
+            <p class="text-justify antialiased md:subpixel-antialiased font-medium tracking-wide text-center mx-36 whitespace-pre-wrap">
+ Filho de pais tapuias, que migraram nos anos 1960 do norte de Minas Gerais (região próxima a Montes Claros) para São Paulo, na capital, indo morar próximos à última aldeia guarani na região sul da cidade, onde nasceu, em 1964.
+
+ Foi nomeado Werá Jecupé, pelo pajé e cacique Alcebíades Werá no período em que morou entre os guarani nos anos de 1980 em um rito de batismo chamado "Nhemongarai" na aldeia Tenondé Porã, antigamente também chamada de Morro da Saudade. 
+                
+Em meados da década de 1980 fez uma peregrinação por várias aldeias guaranis do sudeste e sul do Brasil indo até o Paraguai, buscando o entendimento mais profundo da cultura guarani, refazendo um percurso que historicamente ficou conhecido como “Busca da Terra Sem Males”   ocorridos entre os séculos XVI e XVII em que os guaranis espalharam-se pelo litoral do sul e sudeste, fragmentando sua sabedoria ancestral ao longo desta rota. Dessa peregrinação resultaram depois os livros Tupã Tenondé, O Trovão e o Vento e A Águia e o Colibri, editados pelas editoras: Peirópolis, Polar e pelo Instituto Arapoty; obras de cunho antropológico e filosófico. 
+                
+De 1989 a 1992 apoiou os guaranis na Aldeia Morro da Saudade a construírem o primeiro centro de resgate e preservação da cultura tradicional , o Centro de Cultura Ambá Arandu. 
+                
+Em 1994 fundou o Instituto Arapoty, destinado a difundir os valores e a filosofia dos povos indígenas do Brasil e promover ações de sustentabilidade e empreendedorismo social, através de valorização da arte, do artesanato e da criação de um movimento de empoderamento pela literatura indígena, tornando cidadãos indígenas protagonistas de sua própria fala.</p>
+
+                <h2 class="main text-4xl tracking-widest mb-4 mt-20 flex justify-center">RECONHECIMENTO NACIONAL E INTERNACIONAL</h2>
+
+          <p class="text-justify antialiased md:subpixel-antialiased font-medium tracking-wide text-center mx-36 whitespace-pre-wrap"> 
+ Sua atuação na área do empreendedorismo social e direitos humanos conferiu-lhe diversos prêmios ao longo do tempo: da Ashoka Empreendedores Sociais em 2003,
+ Prêmio Transformadores da revista Trip em 2010. Foi um dos conselheiros pioneiros da Bolsa de Valores Sociais, da BOVESPA, atuando na indicação de projetos de preservação ecológica e sustentabilidade.
+
+ Seu conhecimento da cultura ancestral do Brasil o levou a proferir palestras na Universidade de Oxford (1997) , Universidade de Stanford (2002), Universidade de Nova York (NYU) em (2003), na UNESCO. Desde 2001  tem dado seminários na França, no México, na Escócia, na Índia e na África do Sul. 
+
+ Foi nesse período que Kaká Werá valeu-se da literatura como instrumento de (re)existência e difusão de saberes e valores dos povos indígenas sendo um dos precursores e incentivadores da produção literária pelos próprios representantes dessas culturas ancestrais, tendo publicado ainda dois livros no exterior  “ La voix du Tonner” em francês através da Fundacion Danielle Mittterand e em alemão através da Sociedade Antroposófica, 
+
+ Na França foi um dos fundadores do Institut Arapoty France, responsável por organizar seminários, publicações, cursos com foco em ecologia, diversidade cultural e filosofias dos povos ancestrais do Brasil. 
+
+ Leciona a mais de 25 anos na Universidade Holística da Paz (UNIPAZ), cujo reitor é o antropólogo e psicólogo Roberto Crema, que o tornou responsável pela cátedra indígena da Universidade.
+                </p>
+    </div>
+    <div class="p-4 mt-36 justify-between">
+        <button  class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r float-right">
+          <a href="pag1.html">Próximo -></a>
+        </button>
+      </div>
+      
+      
+    
+
+
+
+    <!----Footer-->
+    <footer class="text-white py-6">
+        <div class=" mx-auto text-center">
+            <p>&copy; 2023 Cultura indígena</p>
+            <div class="dropdown inline-block relative group">
+                <button class="font-medium py-2 px-4 rounded inline-flex items-center text-white hover:bg-gray-700 ">
+                    <span class="text-xl px-4 tracking-wide"><a href="pag-dev.html">Quem Somos</a></span>
+                </button>
+                <div class="dropdown inline-block relative group">
+                    <button class="font-medium py-2 px-4 rounded inline-flex items-center text-white hover:bg-gray-700">
+                        <span class="text-xl px-4 tracking-wide"><a href="contate_nos.html">Contate-nós</a></span>
+                    </button>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
